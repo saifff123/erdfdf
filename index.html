@@ -29,6 +29,11 @@
             border-bottom: 1px solid rgba(232, 199, 208, 0.3);
             animation: slideDown 0.6s ease;
             box-shadow: 0 2px 20px rgba(74, 74, 74, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
         }
 
         @keyframes slideDown {
@@ -623,12 +628,28 @@
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+                padding: 15px 20px;
             }
 
             .nav-links {
-                flex-direction: column;
+                flex-direction: row;
                 gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .top-banner {
+                font-size: 11px;
+                padding: 10px;
             }
 
             .hero h1 {
@@ -837,6 +858,30 @@
     </footer>
 
     <script>
+        // Navbar hide/show on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        const scrollThreshold = 100; // Scroll threshold in pixels
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > scrollThreshold) {
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    header.classList.add('hidden');
+                } else {
+                    // Scrolling up
+                    header.classList.remove('hidden');
+                }
+            } else {
+                // At top of page
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
