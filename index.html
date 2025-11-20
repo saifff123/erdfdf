@@ -14,7 +14,7 @@
         body {
             font-family: 'Cormorant Garamond', 'Georgia', serif;
             background: #FAF7F2;
-            color: #4A4A4A;
+            color: #2C2C2C;
             overflow-x: hidden;
         }
 
@@ -46,7 +46,7 @@
             padding: 12px;
             text-align: center;
             font-size: 14px;
-            color: #4A4A4A;
+            color: #2C2C2C;
             font-weight: 600;
             letter-spacing: 2px;
             animation: shimmer 3s infinite;
@@ -67,7 +67,7 @@
         .logo {
             font-size: 28px;
             font-weight: 700;
-            background: linear-gradient(135deg, #E8C7D0, #4A4A4A);
+            background: linear-gradient(135deg, #B8889E, #2C2C2C);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 3px;
@@ -75,8 +75,8 @@
         }
 
         @keyframes glow {
-            0%, 100% { filter: drop-shadow(0 0 5px rgba(232, 199, 208, 0.5)); }
-            50% { filter: drop-shadow(0 0 20px rgba(232, 199, 208, 0.8)); }
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(184, 136, 158, 0.5)); }
+            50% { filter: drop-shadow(0 0 20px rgba(184, 136, 158, 0.8)); }
         }
 
         .nav-links {
@@ -86,12 +86,13 @@
         }
 
         .nav-links a {
-            color: #4A4A4A;
+            color: #2C2C2C;
             text-decoration: none;
             font-size: 16px;
             letter-spacing: 1px;
             position: relative;
             transition: all 0.3s ease;
+            font-weight: 600;
         }
 
         .nav-links a::after {
@@ -101,7 +102,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #E8C7D0, #4A4A4A);
+            background: linear-gradient(90deg, #B8889E, #2C2C2C);
             transition: width 0.3s ease;
         }
 
@@ -110,13 +111,13 @@
         }
 
         .nav-links a:hover {
-            color: #E8C7D0;
+            color: #B8889E;
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, rgba(74, 74, 74, 0.3), rgba(232, 199, 208, 0.4)), 
+            background: linear-gradient(135deg, rgba(44, 44, 44, 0.4), rgba(184, 136, 158, 0.3)), 
                         url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1600&q=80');
             background-size: cover;
             background-position: center;
@@ -133,7 +134,7 @@
             position: absolute;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(232, 199, 208, 0.15) 1px, transparent 1px);
+            background: radial-gradient(circle, rgba(184, 136, 158, 0.15) 1px, transparent 1px);
             background-size: 50px 50px;
             animation: float 20s linear infinite;
         }
@@ -156,10 +157,11 @@
         .hero h1 {
             font-size: 72px;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #4A4A4A, #E8C7D0, #4A4A4A);
+            background: linear-gradient(135deg, #1A1A1A, #B8889E, #1A1A1A);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: slideIn 1.2s ease;
+            font-weight: 900;
         }
 
         @keyframes slideIn {
@@ -170,9 +172,10 @@
         .hero p {
             font-size: 24px;
             margin-bottom: 40px;
-            color: #4A4A4A;
+            color: #1A1A1A;
             animation: fadeIn 1.5s ease;
-            text-shadow: 0 2px 10px rgba(250, 247, 242, 0.8);
+            text-shadow: 0 2px 10px rgba(250, 247, 242, 0.9);
+            font-weight: 600;
         }
 
         @keyframes fadeIn {
@@ -183,9 +186,9 @@
         .cta-btn {
             padding: 18px 45px;
             font-size: 16px;
-            background: linear-gradient(135deg, #E8C7D0, #FAF7F2);
-            color: #4A4A4A;
-            border: 2px solid #E8C7D0;
+            background: linear-gradient(135deg, #B8889E, #FAF7F2);
+            color: #1A1A1A;
+            border: 2px solid #B8889E;
             cursor: pointer;
             font-weight: 700;
             letter-spacing: 2px;
@@ -219,9 +222,9 @@
 
         .cta-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(232, 199, 208, 0.4);
-            background: #E8C7D0;
-            color: #FAF7F2;
+            box-shadow: 0 10px 30px rgba(184, 136, 158, 0.4);
+            background: #B8889E;
+            color: #FFFFFF;
         }
 
         /* Shop by Price */
@@ -234,8 +237,9 @@
         .section-title {
             font-size: 48px;
             margin-bottom: 60px;
-            color: #E8C7D0;
+            color: #B8889E;
             animation: fadeInUp 0.8s ease;
+            font-weight: 700;
         }
 
         .price-grid {
@@ -249,7 +253,7 @@
         .price-card {
             padding: 40px 30px;
             background: #FFFFFF;
-            border: 2px solid #E8C7D0;
+            border: 2px solid #B8889E;
             cursor: pointer;
             transition: all 0.4s ease;
             position: relative;
@@ -264,7 +268,7 @@
             left: 50%;
             width: 0;
             height: 0;
-            background: radial-gradient(circle, rgba(232, 199, 208, 0.2), transparent);
+            background: radial-gradient(circle, rgba(184, 136, 158, 0.2), transparent);
             transform: translate(-50%, -50%);
             transition: all 0.5s ease;
         }
@@ -276,13 +280,13 @@
 
         .price-card:hover {
             transform: translateY(-10px);
-            border-color: #4A4A4A;
-            box-shadow: 0 15px 40px rgba(232, 199, 208, 0.4);
+            border-color: #2C2C2C;
+            box-shadow: 0 15px 40px rgba(184, 136, 158, 0.4);
         }
 
         .price-card h3 {
             font-size: 28px;
-            color: #E8C7D0;
+            color: #B8889E;
             margin-bottom: 15px;
             position: relative;
             z-index: 1;
@@ -291,10 +295,11 @@
 
         .price-card p {
             font-size: 16px;
-            color: #4A4A4A;
+            color: #2C2C2C;
             position: relative;
             z-index: 1;
             line-height: 1.6;
+            font-weight: 600;
         }
 
         /* Featured Collection */
@@ -315,11 +320,11 @@
         .featured-image {
             width: 100%;
             height: 600px;
-            background: linear-gradient(135deg, rgba(250, 247, 242, 0.3), rgba(232, 199, 208, 0.3)), 
+            background: linear-gradient(135deg, rgba(250, 247, 242, 0.3), rgba(184, 136, 158, 0.3)), 
                         url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80');
             background-size: cover;
             background-position: center;
-            border: 3px solid #E8C7D0;
+            border: 3px solid #B8889E;
             border-radius: 10px;
             position: relative;
             overflow: hidden;
@@ -333,7 +338,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, transparent, rgba(232, 199, 208, 0.15));
+            background: linear-gradient(135deg, transparent, rgba(184, 136, 158, 0.15));
             animation: shimmerOverlay 3s ease-in-out infinite;
         }
 
@@ -345,18 +350,20 @@
         .featured-text h2 {
             font-size: 52px;
             margin-bottom: 30px;
-            background: linear-gradient(135deg, #E8C7D0, #4A4A4A);
+            background: linear-gradient(135deg, #B8889E, #2C2C2C);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: fadeInUp 0.8s ease;
+            font-weight: 800;
         }
 
         .featured-text p {
             font-size: 20px;
             line-height: 1.8;
-            color: #4A4A4A;
+            color: #2C2C2C;
             margin-bottom: 40px;
             animation: fadeInUp 1s ease;
+            font-weight: 500;
         }
 
         /* Categories */
@@ -377,7 +384,7 @@
             height: 400px;
             background-size: cover;
             background-position: center;
-            border: 2px solid #E8C7D0;
+            border: 2px solid #B8889E;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -395,7 +402,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(74, 74, 74, 0.6), rgba(232, 199, 208, 0.4));
+            background: linear-gradient(135deg, rgba(44, 44, 44, 0.6), rgba(184, 136, 158, 0.4));
             transition: all 0.5s ease;
         }
 
@@ -406,13 +413,13 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(232, 199, 208, 0.4), transparent 70%);
+            background: radial-gradient(circle, rgba(184, 136, 158, 0.4), transparent 70%);
             opacity: 0;
             transition: opacity 0.5s ease;
         }
 
         .category-card:hover::before {
-            background: linear-gradient(135deg, rgba(74, 74, 74, 0.4), rgba(232, 199, 208, 0.5));
+            background: linear-gradient(135deg, rgba(44, 44, 44, 0.4), rgba(184, 136, 158, 0.5));
         }
 
         .category-card:hover::after {
@@ -426,24 +433,25 @@
         }
 
         .category-card:hover {
-            border-color: #4A4A4A;
+            border-color: #2C2C2C;
             transform: scale(1.05);
-            box-shadow: 0 20px 50px rgba(232, 199, 208, 0.4);
+            box-shadow: 0 20px 50px rgba(184, 136, 158, 0.4);
         }
 
         .category-card h3 {
             font-size: 36px;
-            color: #FAF7F2;
+            color: #FFFFFF;
             z-index: 1;
             transition: all 0.3s ease;
-            text-shadow: 2px 2px 8px rgba(74, 74, 74, 0.8);
+            text-shadow: 2px 2px 8px rgba(44, 44, 44, 0.9);
             position: relative;
+            font-weight: 800;
         }
 
         .category-card:hover h3 {
             transform: scale(1.1);
-            color: #E8C7D0;
-            text-shadow: 0 0 20px rgba(232, 199, 208, 0.9), 2px 2px 8px rgba(74, 74, 74, 0.8);
+            color: #B8889E;
+            text-shadow: 0 0 20px rgba(184, 136, 158, 0.9), 2px 2px 8px rgba(44, 44, 44, 0.9);
         }
 
         /* About */
@@ -461,9 +469,10 @@
         .about-content p {
             font-size: 20px;
             line-height: 2;
-            color: #4A4A4A;
+            color: #2C2C2C;
             margin-bottom: 30px;
             animation: fadeInUp 1s ease;
+            font-weight: 500;
         }
 
         .stats {
@@ -480,9 +489,10 @@
 
         .stat h3 {
             font-size: 56px;
-            color: #E8C7D0;
+            color: #B8889E;
             margin-bottom: 10px;
             animation: countUp 2s ease;
+            font-weight: 800;
         }
 
         @keyframes countUp {
@@ -492,7 +502,8 @@
 
         .stat p {
             font-size: 18px;
-            color: #4A4A4A;
+            color: #2C2C2C;
+            font-weight: 600;
         }
 
         /* Services */
@@ -512,7 +523,7 @@
         .service-card {
             padding: 40px;
             background: #FFFFFF;
-            border: 2px solid #E8C7D0;
+            border: 2px solid #B8889E;
             border-radius: 10px;
             text-align: center;
             transition: all 0.4s ease;
@@ -527,7 +538,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(232, 199, 208, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(184, 136, 158, 0.2), transparent);
             transition: left 0.5s ease;
         }
 
@@ -537,8 +548,8 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            border-color: #4A4A4A;
-            box-shadow: 0 20px 40px rgba(232, 199, 208, 0.3);
+            border-color: #2C2C2C;
+            box-shadow: 0 20px 40px rgba(184, 136, 158, 0.3);
         }
 
         .service-icon {
@@ -555,21 +566,23 @@
 
         .service-card h3 {
             font-size: 28px;
-            color: #E8C7D0;
+            color: #B8889E;
             margin-bottom: 15px;
+            font-weight: 700;
         }
 
         .service-card p {
             font-size: 16px;
-            color: #4A4A4A;
+            color: #2C2C2C;
             line-height: 1.6;
+            font-weight: 500;
         }
 
         /* Footer */
         footer {
             background: linear-gradient(180deg, #FAF7F2, #FFFFFF);
             padding: 60px 50px 30px;
-            border-top: 2px solid #E8C7D0;
+            border-top: 2px solid #B8889E;
         }
 
         .footer-content {
@@ -581,9 +594,10 @@
         }
 
         .footer-section h3 {
-            color: #E8C7D0;
+            color: #B8889E;
             margin-bottom: 20px;
             font-size: 24px;
+            font-weight: 700;
         }
 
         .footer-section ul {
@@ -595,21 +609,23 @@
         }
 
         .footer-section a {
-            color: #4A4A4A;
+            color: #2C2C2C;
             text-decoration: none;
             transition: all 0.3s ease;
+            font-weight: 500;
         }
 
         .footer-section a:hover {
-            color: #E8C7D0;
+            color: #B8889E;
             padding-left: 10px;
         }
 
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid rgba(232, 199, 208, 0.3);
-            color: #4A4A4A;
+            border-top: 1px solid rgba(184, 136, 158, 0.3);
+            color: #2C2C2C;
+            font-weight: 500;
         }
 
         /* Scroll animations */
